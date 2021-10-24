@@ -1,0 +1,30 @@
+.nav-container{
+    margin: 0;
+    
+}
+.logo-title{
+    margin-top: 0;
+    letter-spacing: 1.6rem;
+    text-align: center;
+    background-image: linear-gradient(90deg, #ff0000 0%, #ff0084 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.username-display{
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.logout-btn{
+    text-decoration: none;
+    background-color: white;
+    border: 0px; 
+    margin-left: 2rem;
+}

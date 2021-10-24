@@ -1,0 +1,99 @@
+.landing-body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    margin: 0;
+    color: black;
+}
+
+.landing-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-buttons{
+    margin: 5% 25% 5% 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.landing-title{
+    display: flex;
+    margin-top: 15%;
+}
+.h1-letter{
+    margin: 0 15px 0 15px;
+}
+
+
+  .btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 0px;
+    /* display: inline-block; */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+  
+  .text {
+    padding: 0 50px;
+    visibility: hidden;
+  }
+  
+  .flip-front, 
+  .flip-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: flat;
+      transform-style: flat;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      -o-transition: -o-transform .3s ease-out;
+      transition: transform .3s ease-out;
+  }
+  
+  .flip-front {
+      color: #313131;
+      border: 2px solid #313131;
+      background-color: transparent;
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
+  
+  .flip-back {
+    color: #fff;
+    background-color: #313131;
+    border: 2px solid #313131;
+    -webkit-transform: rotateX(90deg) translateZ(25px);
+    -ms-transform: rotateX(90deg) translateZ(25px);
+    -o-transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-front {
+      -webkit-transform: rotateX(-90deg) translateZ(25px);
+      -ms-transform: rotateX(-90deg) translateZ(25px);
+      -o-transform: rotateX(-90deg) translateZ(25px);
+      transform: rotateX(-90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-back {
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
